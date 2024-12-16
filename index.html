@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRB Stampa</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+</head>
+
+<body>
+
+    <!--Header-->
+
+    <header class="max-width bg" id="Home">
+        <div class="container">
+            <nav class="menu">
+                <div class="logo"></div>
+                <div class="desktop-menu">
+                    <ul>
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#About">Trabalhamos</a></li>
+                        <li><a href="#Service">Destaque</a></li>
+                        <li><a href="#Contact">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="mobile-menu" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                    <ul id="myLinks">
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#About">Trabalhamos</a></li>
+                        <li><a href="#Service">Destaque</a></li>
+                        <li><a href="#Contact">Contato</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="call">
+                <div class="left">
+                    <h1 class="color-azul text-gd"> PRB Stampa</h1>
+                    <p class="color-azul text-pd">
+                        Trabalhamos com estampas (sublimação) em camisetas, bonés e canecas.
+                        Tudo personalizado ao seu estilo.</p>
+
+                    <h2 class="color-azul text-md">O que é sublimação em camisetas?</h2>
+
+                    <p class="color-azul text-pd">
+                        Sublimação em camisetas é um processo de transferência de imagens para tecidos,
+                        de forma permanente e com alta qualidade. <br>
+                        A técnica é feita através de um método de aquecimento e pressão,
+                        que transforma a tinta em gás e permite que ela penetre nas fibras do tecido, resultando em uma
+                        estampa resistente e durável. <br>
+                        Diferente de outros processos de estamparia, a sublimação não deixa o toque na camiseta áspero
+                        ou pesado,
+                        e permite a reprodução de imagens em alta definição e com cores vivas.
+                    </p>
+                </div>
+                <div class="right">
+                    <div class="imagem">
+                        <img src="image/img1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button id="back-to-top"></button>
+    </header>
+
+    <!--About-->
+
+    <section class="max-width bg2" id="About">
+        <div class="container">
+            <div class="titulo">
+                <h2 class="text-md color-cinza-1">Trabalhamos</h2>
+                <div class="line">
+                    <div class="text-titulo">Canecas <br> Bonés <br> Camisetas</div>
+                </div>
+            </div>
+            <div class="down">
+                <div class="box">
+                    <img src="image/img2.jpg" alt="">
+                    <div class="text">
+                        <h2 class="color-branco">Canecas</h2>
+                        <p class="color-branco">Canecas de vidro fosco</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="image/img3.png" alt="">
+                    <div class="text">
+                        <h2 class="color-branco">Bonés</h2>
+                        <p class="color-branco">Bonés de diversas cores</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="image/img4.jpg" alt="">
+                    <div class="text">
+                        <h2 class="color-branco">Camisetas</h2>
+                        <p class="color-branco">Personalizadas ao seu estilo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Service-->
+
+    <section class="max-width bg" id="Service">
+        <div class="container">
+            <div class="content">
+                <div class="titulo">
+                    <h2 class="text-md color-cinza-1">Destaque</h2>
+                    <div class="line">
+                        <div class="text-titulo">Promoções <br> acima de 10 peças</div>
+                    </div>
+                </div>
+                <input type="radio" name="slider" id="item-1" checked>
+                <input type="radio" name="slider" id="item-2">
+                <input type="radio" name="slider" id="item-3">
+                <div class="cards">
+                    <label class="card" for="item-1" id="song-1">
+                        <img src="image/img5.jpg" alt="">
+                        <button>Uniformes</button>
+                    </label>
+
+                    <label class="card" for="item-2" id="song-2">
+                        <img src="image/img6.jpg">
+                        <button>Presentes</button>
+                    </label>
+
+                    <label class="card" for="item-3" id="song-3">
+                        <img src="image/img7.jpg">
+                        <button>Brindes</button>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact-->
+
+    <section class="max-width bg2" id="Contact">
+        <div class="container">
+            <div class="titulo">
+                <h2 class="text-md color-cinza-1">Contato</h2>
+                <div class="line">
+                    <div class="text-titulo">Fale Conosco</div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="left">
+                    <div class="box">
+                        <h1>Solicite um orçamento</h1>
+                        <form action="processar-dados.php" method="post">
+                            <label for="nome">Nome:</label>
+                            <input type="text" name="nome" placeholder="Digite seu nome" required>
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" placeholder="exemplo@provedor.com" required>
+                            <label for="mensagem">Mensagem:</label>
+                            <textarea name="mensagem" rows="5" placeholder="Digite sua mensagem" required></textarea>
+                            <button type="submit">Enviar</button>
+                        </form>
+                        <h1>Siga-nos</h1>
+
+                        <div class="social">
+
+                            <a href="https://www.instagram.com/prbstampa/" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+
+                            <a href="https://www.facebook.com/PRBSTAMP/" target="_blank">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="box">
+                        <h1>Nosso Endereço</h1>
+                        <div class="info">
+                            <div class="icons">
+                                <i class="fa-solid fa-envelope"></i>
+                                <i class="fa-solid fa-phone"></i>
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="text">
+                                <p>prbstampa@gmail.com</p>
+                                <p>+55 19 98806 7817</p>
+                                <p>Piracicaba-SP, Brasil</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  Footer  -->
+
+    <footer>
+        <div class="container">
+            <img src="image/Logo.png" alt="">
+            <p class="text-pq">Site criado por: Ana Paula de Freitas Borghesi "Projeto Descodificadas" Trilha 4 </p>
+            <p class="text-pq">Dezembro 2024</p>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+
+        // Menu-mobile
+
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+
+        // Scrollbar Personalizado
+
+        var btn = document.querySelector("#back-to-top");
+        btn.addEventListener("click", function () {
+            window.scrollTo(0, 0);
+        });
+    </script>
+</body>
+
+</html>
